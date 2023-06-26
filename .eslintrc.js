@@ -1,0 +1,1 @@
+/* eslint eqeqeq: 1 */

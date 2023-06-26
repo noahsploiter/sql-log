@@ -1,0 +1,524 @@
+.cashier_main_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cashier_numbers {
+    height: 100vh;
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; */
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.cashier_neighbor_div {
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cashier_neighbor_numbers {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 30px;
+    border: 3px solid rgb(155, 60, 91);
+}
+
+.cashier_neighbor_tbl td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.cashier_neighbor_close {
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.cashier_game_number,
+.cashier_timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px !important;
+    color: #fff;
+    height: 25px;
+}
+
+.cashier_input_fields {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.cashier_keyboard {
+    height: 100vh;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.cashier_progress-bar-horizontal {
+    height: 10px;
+    /* min-height: 400px; */
+    margin-right: 10px !important;
+    margin-left: 10px;
+    /* background: #d0cece; */
+    background: #798078 !important;
+    /* background-image: linear-gradient(180deg, #444943, #808A7E); */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+.cashier_progress-bar-horizontal .cashier_progress-bar {
+    width: 0;
+    height: 100%;
+    -webkit-transition: height 0.6s ease;
+    -o-transition: height 0.6s ease;
+    transition: height 0.6s ease;
+    /* background-color: #469C30;  */
+    background-color: #0000CD;
+    border-radius: 5px;
+}
+
+.cashier_progress_timer_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.cashier_progress-bar-horizontal {
+    border-radius: 5px;
+}
+
+.cashier_timer_logout_container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.cashier_progress_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+}
+
+.cashier_spn_verify,
+.cashier_spn_cancel,
+.cashier_spn_tm {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 2px 8px;
+}
+
+.cashier_spn_signout {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2px 8px;
+}
+
+.cashier_bet_keys {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* padding: 10px 15px; */
+    margin-top: 10px;
+}
+
+.cashier_high_low {
+    width: 25%;
+    padding-right: 10px;
+}
+
+.cashier_number_keys {
+    width: 50%;
+}
+
+.cashier_mirrors {
+    padding-left: 10px;
+    width: 25%;
+}
+
+.cashier_tbl_high_low,
+.cashier_tbl_high_color,
+.cashier_tbl_mirrors,
+.cashier_tbl_sectors,
+.cashier_tbl_finals {
+    width: 100%;
+    border-spacing: 3px;
+    border-collapse: separate;
+}
+
+.cashier_tbl_high_low td {
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    padding: 5px 7px;
+    /* background-image: linear-gradient(red, yellow); */
+    background-image: linear-gradient(#fff, #d3d3d3);
+}
+
+.cashier_tbl_high_color td {
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    padding: 5px 7px;
+}
+
+.cashier_tbl_mirrors td.cashier_td_mirrors {
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    padding: 5px 7px;
+    /* background: #2058c9; */
+    background: #0000CD;
+    color: #fff;
+}
+
+.cashier_tbl_sectors td {
+    width: 33.3%;
+    height: 45px;
+    text-align: center;
+    /* padding: 5px 7px; */
+    background: rgb(155, 60, 91);
+    color: #fff;
+}
+
+.cashier_tbl_finals td {
+    width: 33.3%;
+    height: 45px;
+    text-align: center;
+    /* padding: 5px 7px; */
+    background: #0000CD;
+    color: #fff;
+}
+
+.cashier_tbl_twins_random,
+.cashier_tbl_donzens {
+    width: 100%;
+    border-spacing: 3px;
+    border-collapse: separate;
+}
+
+.cashier_tbl_twins_random td,
+.cashier_tbl_donzens td {
+    width: 33.3%;
+    height: 45px;
+    text-align: center;
+    background: #0000CD;
+    color: #fff;
+}
+
+.cashier_tbl_numbers_only {
+    width: 100%;
+    border-spacing: 3px;
+    border-collapse: separate;
+}
+
+.cashier_tbl_numbers_only td {
+    width: 16.6%;
+    height: 45px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 1365px) {
+    .cashier_progress-bar-horizontal {
+        width: 140px;
+    }
+    .cashier_main_container {
+        width: 1400px;
+        /* width: 100%; */
+    }
+    .cashier_numbers {
+        /* width: 700px !important;  */
+        width: 50%;
+    }
+    .cashier_input_fields {
+        /* width: 350px !important;  */
+        width: 25%;
+    }
+    .cashier_keyboard {
+        /* width: 350px !important; */
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .cashier_progress-bar-horizontal {
+        width: 160px;
+    }
+    .cashier_main_container {
+        width: 100%;
+    }
+    .cashier_numbers {
+        width: 50% !important;
+    }
+    .cashier_input_fields {
+        width: 25% !important;
+    }
+    .cashier_keyboard {
+        width: 25% !important;
+    }
+}
+
+.cashier_btn_clear {
+    width: 100% !important;
+    height: 40px;
+    background-image: linear-gradient(#0bab64, #3bb78f);
+    color: #fff;
+    border: 1px solid green;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.cashier_btn_custom_amount {
+    width: 45%;
+    height: 40px;
+    background-image: linear-gradient(#0bab64, #3bb78f);
+    color: #fff;
+    border: 1px solid green;
+    border-radius: 2px;
+}
+
+.cashier_custom_amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cashier_input_print {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.cashier_input_print input[type="number"] {
+    width: 65%;
+    height: 40px;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+
+.cashier_input_print .cashier_btn_print {
+    width: 30%;
+    height: 40px;
+    padding: 3px 5px;
+    border-radius: 10px;
+    background: lightgreen;
+}
+
+.cashier_keyboard_numbers {
+    margin-top: 10px;
+}
+
+.cashier_tbl_keyboard_numbers {
+    width: 100%;
+    border-spacing: 4px;
+    border-collapse: separate;
+}
+
+.cashier_tbl_keyboard_numbers td {
+    width: 33%;
+    height: 45px;
+    text-align: center;
+    padding: 5px 7px;
+    /* background-image: linear-gradient(red, yellow); */
+    background-image: linear-gradient(#fff, #d3d3d3);
+}
+
+.cashier_main_container td:hover,
+.cashier_main_container button:hover {
+    cursor: pointer;
+    color: black !important;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%) !important;
+    animation: slidebg 5s linear infinite;
+    transition: .3s;
+}
+
+.cashier_spn_verify:hover,
+.cashier_spn_tm:hover,
+.cashier_spn_cancel:hover,
+.cashier_spn_signout:hover {
+    cursor: pointer;
+}
+
+.cashier_inputs {
+    height: 50px;
+    background-image: linear-gradient(#fff, #d3d3d3);
+    display: flex;
+}
+
+.cashier_inputs input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.cashier_verify input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.cashier_tbl_verify th {
+    background: #666;
+    height: 40px;
+    color: #fff;
+    border: 1px solid #999;
+}
+
+.cashier_tbl_verify td {
+    height: 40px;
+    color: #fff;
+    border: 1px solid lightcoral;
+}
+
+.cashier_btn_remove {
+    height: 30px;
+    width: 30px;
+    border: 0px solid black;
+    background: red;
+    border-radius: 50%;
+}
+
+.cashier_tbl_tm {
+    width: 100%;
+    font-size: 18px;
+}
+
+.cashier_tbl_tm .th_left {
+    text-align: right;
+    width: 60%;
+    height: 50px;
+    padding-right: 5px;
+}
+
+.cashier_tbl_tm .th_right {
+    text-align: left;
+    width: 40%;
+    height: 50px;
+    padding-left: 5px;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+.follow {
+    margin-top: 40px;
+}
+
+.follow a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* @media screen and (max-width: 2000px) and (min-width: 1500px)
+{
+   .dv_spin {
+   width: 700px !important;
+   height: 700px !important;
+   border-radius: 50%;
+}
+
+}
+@media screen and (max-width: 3000px) and (min-width: 2000px)
+{
+   .dv_spin {
+   width: 860px !important;
+   height: 860px !important;
+   border-radius: 50%;
+}
+
+} */
+
+.ticket td,
+.ticket th,
+.ticket tr,
+.ticket table {
+    /* border-top: 1px solid black; */
+    border-collapse: collapse;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+td.description,
+th.description {
+    width: 75px;
+    max-width: 75px;
+}
+
+td.quantity,
+th.quantity {
+    width: 40px;
+    max-width: 40px;
+    word-break: break-all;
+}
+
+td.price,
+th.price {
+    width: 40px;
+    max-width: 40px;
+    word-break: break-all;
+}
+
+.centered {
+    text-align: center;
+    align-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+.ticket {
+    width: 170px;
+    max-width: 170px;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.ticket img {
+    max-width: inherit;
+    width: inherit;
+}
+
+@media print {
+    .hidden-print,
+    .hidden-print * {
+        display: none !important;
+    }
+}

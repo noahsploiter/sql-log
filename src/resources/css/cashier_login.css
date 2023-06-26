@@ -1,0 +1,1009 @@
+/* input[type="password"] {
+  color: transparent;
+} */
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    /* src: url('../fonts/poppins/Poppins-Regular.ttf'); */
+    src: url('./fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    /* src: url('../fonts/poppins/Poppins-Medium.ttf');  */
+    src: url('./fonts/roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    /* src: url('../fonts/poppins/Poppins-Bold.ttf');  */
+    src: url('./fonts/roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    /* src: url('../fonts/poppins/Poppins-SemiBold.ttf');  */
+    src: url('./fonts/roboto/Roboto-Bold.ttf');
+}
+
+/*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body, html {
+      height: 100%;
+      font-family: Poppins-Regular, sans-serif;
+    background: #ebeeef!important;
+  } */
+
+/*---------------------------------------------*/
+
+.cashier_login_main_container a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+.cashier_login_main_container a:focus {
+    outline: none !important;
+}
+
+.cashier_login_main_container a:hover {
+    text-decoration: none;
+    /*   color: #FFAF0A;  
+     
+  
+     color: linear-gradient(310deg,#fd7e14,#ff8c00); */
+}
+
+/*---------------------------------------------*/
+
+.cashier_login_main_container h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+.cashier_login_main_container p {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+.cashier_login_main_container ul,
+li {
+    margin: 0px;
+    list-style-type: none;
+}
+
+/*---------------------------------------------*/
+
+.cashier_login_main_container input {
+    outline: none;
+    border: none;
+}
+
+.cashier_login_main_container input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.cashier_login_main_container input[type="number"]::-webkit-outer-spin-button,
+.cashier_login_main_container input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.cashier_login_main_container textarea {
+    outline: none;
+    border: none;
+}
+
+.cashier_login_main_container textarea:focus,
+input:focus {
+    border-color: transparent !important;
+}
+
+.cashier_login_main_container input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.cashier_login_main_container input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.cashier_login_main_container input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.cashier_login_main_container input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.cashier_login_main_container textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.cashier_login_main_container textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.cashier_login_main_container textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.cashier_login_main_container textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.cashier_login_main_container input::-webkit-input-placeholder {
+    color: #999999;
+}
+
+.cashier_login_main_container input:-moz-placeholder {
+    color: #999999;
+}
+
+.cashier_login_main_container input::-moz-placeholder {
+    color: #999999;
+}
+
+.cashier_login_main_container input:-ms-input-placeholder {
+    color: #999999;
+}
+
+.cashier_login_main_container textarea::-webkit-input-placeholder {
+    color: #999999;
+}
+
+.cashier_login_main_container textarea:-moz-placeholder {
+    color: #999999;
+}
+
+.cashier_login_main_container textarea::-moz-placeholder {
+    color: #999999;
+}
+
+.cashier_login_main_container textarea:-ms-input-placeholder {
+    color: #999999;
+}
+
+.cashier_login_main_container label {
+    display: block;
+    margin: 0;
+}
+
+/*---------------------------------------------*/
+
+.cashier_login_main_container button {
+    outline: none !important;
+    border: none;
+    /* background: transparent; */
+    background: #002e00;
+}
+
+.cashier_login_main_container button:hover {
+    cursor: pointer;
+    background: rgba(0, 46, 0, 0.9);
+}
+
+.cashier_login_main_container iframe {
+    border: none !important;
+}
+
+/*//////////////////////////////////////////////////////////////////
+  [ Utility ]*/
+
+.cashier_login_main_container .txt1 {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #999999;
+}
+
+/*//////////////////////////////////////////////////////////////////
+  [ login ]*/
+
+.cashier_login_main_container .limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cashier_login_main_container .container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #ebeeef;
+    /* background:  #FFAF0A; */
+}
+
+.cashier_login_main_container .wrap-login100 {
+    width: 670px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*==================================================================
+  [ Title form ]*/
+
+.cashier_login_main_container .login100-form-title {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 15px 74px 15px;
+}
+
+.cashier_login_main_container .login100-form-title-1 {
+    font-family: Poppins-Bold;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.cashier_login_main_container .login100-form-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(54,84,99,0.7); */
+    /* background-color: rgba(255, 175, 10 , 0.7) ; */
+    background-color: rgba(0, 46, 0, 0.7);
+}
+
+/*==================================================================
+  [ Form ]*/
+
+.cashier_login_main_container .login100-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 43px 88px 93px 190px;
+}
+
+/*------------------------------------------------------------------
+  [ Input ]*/
+
+.cashier_login_main_container .wrap-input100 {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.cashier_login_main_container .label-input100 {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    text-align: right;
+    position: absolute;
+    top: 14px;
+    left: -105px;
+    width: 80px;
+}
+
+/*---------------------------------------------*/
+
+.cashier_login_main_container .input100 {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: 0 5px;
+}
+
+.cashier_login_main_container .focus-input100 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.cashier_login_main_container .focus-input100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+    /*background: #FFAF0A;*/
+    /* background-image: linear-gradient(310deg,#fd7e14,#ff8c00); */
+    background: #002e00;
+}
+
+/*---------------------------------------------*/
+
+.cashier_login_main_container input.input100 {
+    height: 45px;
+}
+
+.cashier_login_main_container .input100:focus+.focus-input100::before {
+    width: 100%;
+}
+
+.cashier_login_main_container .has-val.input100+.focus-input100::before {
+    width: 100%;
+}
+
+/*==================================================================
+  [ Restyle Checkbox ]*/
+
+.cashier_login_main_container .input-checkbox100 {
+    display: none;
+}
+
+.cashier_login_main_container .label-checkbox100 {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.4;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+}
+
+.cashier_login_main_container .label-checkbox100::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 13px;
+    color: transparent;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.cashier_login_main_container .input-checkbox100:checked+.label-checkbox100::before {
+    /* color: #FFAF0A;*/
+    /* color: linear-gradient(310deg,#fd7e14,#ff8c00); */
+    color: #002e00;
+}
+
+/*------------------------------------------------------------------
+  [ Button ]*/
+
+.cashier_login_main_container .container-login100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cashier_login_main_container .login100-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 50px;
+    /*background: #FFAF0A;*/
+    background-image: linear-gradient(310deg, #fd7e14, #ff8c00);
+    border-radius: 25px;
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.cashier_login_main_container .login100-form-btn:hover {
+    /* background-color: #333333; */
+}
+
+.cashier_login_main_container .dv_page_setup_mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cashier_login_main_container .dv_page_setup_small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.cashier_login_main_container .dv_page_setup_small label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.cashier_login_main_container .h4_welcome {
+    padding: 0px 20px;
+}
+
+.cashier_login_main_container .spn_menu_item {
+    padding: 3px 20px;
+    display: block;
+    margin-top: 0px !important;
+}
+
+.cashier_login_main_container .spn_menu_item:hover {
+    background: #E5E7E9;
+}
+
+/*------------------------------------------------------------------
+  [ Responsive ]*/
+
+@media (max-width: 576px) {
+    .cashier_login_main_container .login100-form {
+        padding: 43px 15px 57px 117px;
+    }
+}
+
+@media (max-width: 650px) {
+    .cashier_login_main_container .dv_page_setup_mid {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 650px) {
+    .cashier_login_main_container .dv_page_setup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cashier_login_main_container .login100-form {
+        padding: 43px 15px 57px 15px;
+    }
+    .cashier_login_main_container .label-input100 {
+        text-align: left;
+        position: unset;
+        top: unset;
+        left: unset;
+        width: 100%;
+        padding: 0 5px;
+    }
+}
+
+/*------------------------------------------------------------------
+  [ Alert validate ]*/
+
+.cashier_login_main_container .validate-input {
+    position: relative;
+}
+
+.cashier_login_main_container .alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: #fff;
+    border: 1px solid #c80000;
+    border-radius: 2px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 2px;
+    pointer-events: none;
+    font-family: Poppins-Medium;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.cashier_login_main_container .alert-validate::after {
+    content: "\f06a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 8px;
+}
+
+.cashier_login_main_container .alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .cashier_login_main_container .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+    .cashier_login_main_container .spn_company_title {
+        display: none;
+    }
+}
+
+/** for the new check box **/
+
+.cashier_login_main_container .container_cb {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    color: #666666;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.cashier_login_main_container .container_cb input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+
+.cashier_login_main_container .checkmark_cb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #dedede;
+}
+
+/* On mouse-over, add a grey background color */
+
+.cashier_login_main_container .container_cb:hover input~.checkmark_cb {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.cashier_login_main_container .container_cb input:checked~.checkmark_cb {
+    /* background-color: #2196F3; */
+    /* background-color: #fd7e14; */
+    background-color: #002e00;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.cashier_login_main_container .checkmark_cb:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.cashier_login_main_container .container_cb input:checked~.checkmark_cb:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.cashier_login_main_container .container_cb .checkmark_cb:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* modal */
+
+.cashier_login_main_container .dv_modal {
+    /*display: flex;*/
+    /* min-height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+    /* opacity: 0.8; */
+    z-index: 10;
+    /* opacity: 0; */
+    transition: opacity 0.3s ease;
+}
+
+.cashier_login_main_container .dv_modal_internal {
+    width: 500px;
+    background: #fff;
+    max-width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.cashier_login_main_container .login100-form-btn2 {
+    /* background: #ee7600; */
+    background: #002e00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.cashier_login_main_container .login100-form-btn2:hover {
+    /* background: #cc5500; */
+    background: #002e00;
+}
+
+.cashier_login_main_container .btn-modal {
+    /* background: #ee7600; */
+    background: #002e00;
+    /* background: #6c757d; */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.cashier_login_main_container .btn-modal:hover {
+    /* background: #cc5500; */
+    background: #002e00;
+}
+
+.cashier_login_main_container .tbl_upload tr td {
+    padding-right: 20px;
+}
+
+.cashier_login_main_container .tbl_new_existing tr td {
+    padding-right: 20px;
+}
+
+.cashier_login_main_container .tbl_report thead tr td {
+    padding: 5px 10px;
+}
+
+.cashier_login_main_container .tbl_report thead tr th {
+    padding: 5px 10px;
+}
+
+.cashier_login_main_container input[type=file]::file-selector-button {
+    border: 2px solid #666666;
+    padding: 7px 15px;
+    border-radius: .2em;
+    background-color: #666666;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.cashier_login_main_container input[type=file]::file-selector-button:hover {
+    background-color: #28282B;
+    border: 2px solid #28282B;
+}
+
+.cashier_login_main_container input[type="radio"] {
+    width: 20px !important;
+}
+
+.cashier_login_main_container .lnk_license {
+    color: #999;
+    text-decoration: none;
+}
+
+.cashier_login_main_container .lnk_license:hover {
+    /* color: #ee7600; */
+    color: #002e00;
+}
+
+.cashier_login_main_container .spn_logout {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cashier_login_main_container .spn_logout:hover {
+    cursor: pointer;
+    color: #E5E7E9;
+}
+
+.cashier_login_main_container .spn_ellipse:hover {
+    cursor: pointer;
+    color: #E5E7E9;
+}
+
+.cashier_login_main_container .form_text_input:focus {
+    border: 1px solid #999 !important;
+}
+
+.cashier_login_main_container select:not(select.slc_page) {
+    /* styling */
+    color: #666;
+    background-color: white;
+    border: thin solid #cccccc;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    width: 100%;
+    /* reset */
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), radial-gradient(#ddd 70%, transparent 72%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - .5em) .5em;
+    background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+    background-repeat: no-repeat;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.cashier_login_main_container select:not(select.slc_page):focus {
+    background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(135deg, transparent 50%, white 50%), radial-gradient(gray 70%, transparent 72%);
+    background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - .5em) .5em;
+    background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+    background-repeat: no-repeat;
+    border-color: #cccccc;
+    outline: 0;
+}
+
+.cashier_login_main_container select.slc_page {
+    padding: 2px 2px;
+    border: 1px solid #999;
+    outline: 0px;
+    display: inline;
+}
+
+.cashier_login_main_container option:hover {
+    /* background-color:#ee7600; */
+    background: #002e00;
+    color: #000 !important;
+}
+
+.cashier_login_main_container option {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    color: #000;
+}
+
+.cashier_login_main_container a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 10px;
+    margin-right: 10px;
+}
+
+.cashier_login_main_container .previous:hover,
+.next:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.cashier_login_main_container .previous {
+    /* background-color: #f1f1f1; */
+    background-color: gray;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cashier_login_main_container .next {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.cashier_login_main_container .dull_lnk {
+    background-color: gray;
+    color: #fff;
+}
+
+.cashier_login_main_container .dull_lnk:hover {
+    color: #fff;
+    cursor: default;
+}
+
+.cashier_login_main_container .icon_ellipse {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 7px;
+    color: #fff;
+}
+
+.cashier_login_main_container .icon_ellipse:hover {
+    color: #E5E7E9;
+}
+
+.cashier_login_main_container .table {
+    border-left: 1px solid #ddd;
+}
+
+.cashier_login_main_container .table thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.cashier_login_main_container .table tbody>tr>td {
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+/* For Mobile */
+
+@media screen and (max-width: 540px) {
+    /* .dv_search_slc, .dv_search_btn, .dv_search_txt{
+      width: 100%;
+    } */
+}
+
+/* For Tablets */
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    /* .dv_search_slc, .dv_search_btn, .dv_search_txt{
+      width: 100%;
+    } */
+}
+
+@media screen and (min-width: 780px) {
+    .dv_search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dv_search .dv_search_txt,
+    .dv_search .dv_search_btn {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .dv_search .dv_search_slc {
+        margin-bottom: 20px;
+    }
+    .dv_search .dv_search_txt {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1041px) {
+    .dv_search_time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dv_search_time .dv_search_btn {
+        margin-left: 20px;
+    }
+    .dv_search_time .dv_search_date input {
+        margin-left: 20px;
+    }
+    .dv_search_time .dv_search_date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .dv_search_time .dv_search_date {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .dv_search_time .dv_search_slc {
+        margin-bottom: 20px;
+    }
+    .dv_search_time .dv_search_date input {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+}
+
+.wrap-input100.validate-input {
+    margin-bottom: 20px;
+}

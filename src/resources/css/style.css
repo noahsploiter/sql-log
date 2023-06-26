@@ -1,0 +1,16 @@
+@font-face {
+  font-family: roboto-regular;
+  /* src: url('./fonts/roboto/Roboto-Regular.ttf'); */
+  src: url("../img/Sura-Regular.ttf");
+}
+
+body {
+  font-family: roboto-regular;
+  /* font-family: "Open Sans", sans-serif; */
+  background: url(../img/green_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* font-weight: 600;  */
+}

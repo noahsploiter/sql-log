@@ -1,0 +1,60 @@
+var map = {
+	"./0.wav": 4801,
+	"./1.wav": 4543,
+	"./10.wav": 5203,
+	"./11.wav": 2725,
+	"./12.wav": 3498,
+	"./13.wav": 9600,
+	"./14.wav": 7660,
+	"./15.wav": 4618,
+	"./16.wav": 3225,
+	"./17.wav": 8476,
+	"./18.wav": 5093,
+	"./19.wav": 7998,
+	"./2.wav": 3581,
+	"./20.wav": 8342,
+	"./21.wav": 6143,
+	"./22.wav": 4906,
+	"./23.wav": 6932,
+	"./24.wav": 7559,
+	"./25.wav": 932,
+	"./26.wav": 5250,
+	"./27.wav": 1256,
+	"./28.wav": 6594,
+	"./29.wav": 5405,
+	"./3.wav": 6784,
+	"./30.wav": 1867,
+	"./31.wav": 3474,
+	"./32.wav": 9105,
+	"./33.wav": 3778,
+	"./34.wav": 4354,
+	"./35.wav": 9607,
+	"./36.wav": 9769,
+	"./37.wav": 5844,
+	"./4.wav": 9700,
+	"./5.wav": 4983,
+	"./6.wav": 1320,
+	"./7.wav": 1313,
+	"./8.wav": 783,
+	"./9.wav": 8575
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 2624;
